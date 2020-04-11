@@ -3,7 +3,9 @@
 Search for type definition files from the command line.
 
 ```sh
-$> npm i -g dts
+# install globally
+npm i -g dts
 
-$> dts some-package
+# Call `dts` with some package name as first arg
+dts some-package
 ```
