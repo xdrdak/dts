@@ -1,0 +1,47 @@
+{
+  "version": "0.1.0",
+  "license": "MIT",
+  "bin": "bin/index.js",
+  "files": [
+    "dist",
+    "bin",
+    "src"
+  ],
+  "engines": {
+    "node": ">=10"
+  },
+  "scripts": {
+    "start": "tsdx watch",
+    "build": "tsdx build --target node --format cjs",
+    "test": "tsdx test",
+    "lint": "tsdx lint",
+    "prepare": "tsdx build",
+    "dts": "node dist/index.js"
+  },
+  "peerDependencies": {},
+  "husky": {
+    "hooks": {
+      "pre-commit": "tsdx lint"
+    }
+  },
+  "prettier": {
+    "printWidth": 80,
+    "semi": true,
+    "singleQuote": true,
+    "trailingComma": "es5"
+  },
+  "name": "dts",
+  "author": "Xavier Drdak",
+  "module": "dist/dts.esm.js",
+  "devDependencies": {
+    "@types/jest": "^25.1.4",
+    "@types/typeahead": "^0.11.32",
+    "husky": "^4.2.3",
+    "tsdx": "^0.13.0",
+    "tslib": "^1.11.1",
+    "typescript": "^3.8.3"
+  },
+  "dependencies": {
+    "bloodhound-js": "^1.2.3"
+  }
+}
