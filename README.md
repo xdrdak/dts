@@ -3,7 +3,7 @@
 Search for type definition files from the command line.
 
 ```sh
-$ npm i -g dts
+$> npm i -g dts
 
-$ dts some-package
+$> dts some-package
 ```
